@@ -2,7 +2,7 @@ import { Check } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ScrollReveal } from './scroll-reveal';
-import { SIGNUP_URL } from '@/lib/constants';
+import { SIGNUP_URL, UPGRADE_URL } from '@/lib/constants';
 
 const plans = [
   {
@@ -11,6 +11,7 @@ const plans = [
     period: 'forever',
     description: 'Good for getting started. No commitment.',
     cta: 'Start for Free',
+    href: SIGNUP_URL,
     popular: false,
     features: [
       '3 projects',
@@ -29,6 +30,7 @@ const plans = [
     period: 'per month',
     description: 'For anyone doing this seriously. Your brand, no compromises.',
     cta: 'Go Pro',
+    href: UPGRADE_URL,
     popular: true,
     features: [
       'Unlimited projects',
@@ -125,7 +127,7 @@ export function Pricing() {
                         : 'bg-primary-foreground/10 text-primary-foreground border border-primary-foreground/15 hover:bg-primary-foreground/15'
                     }`}
                   >
-                    <a href={SIGNUP_URL}>{plan.cta}</a>
+                    <a href={plan.href}>{plan.cta}</a>
                   </Button>
                   <p className="mt-3 text-center text-xs text-primary-foreground/30">{plan.note}</p>
                 </div>
