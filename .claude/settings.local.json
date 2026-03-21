@@ -6,7 +6,8 @@
       "Bash(ls:*)",
       "Bash(pnpm create:*)",
       "Bash(pnpm add:*)",
-      "Bash(pnpm dlx:*)"
+      "Bash(pnpm dlx:*)",
+      "Bash(pnpm build:*)"
     ]
   }
 }
