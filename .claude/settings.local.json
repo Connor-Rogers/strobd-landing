@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:crumblcookies.com)",
+      "WebFetch(domain:www.tagheuer.com)",
+      "Bash(ls:*)",
+      "Bash(pnpm create:*)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm dlx:*)"
+    ]
+  }
+}
