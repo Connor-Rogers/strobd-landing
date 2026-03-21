@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
+import { ScrollRestore } from '@/components/scroll-restore';
 import './globals.css';
 
 const geistSans = Geist({
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     template: '%s | Strobd',
   },
   description:
-    'The all-in-one platform for creators to publish branded websites, share proofing galleries with clients, accept payments, and deliver digital files.',
+    'Build your site, share client galleries, get paid, and deliver files. Strobd is the platform photographers and creators use to run their whole client workflow.',
   keywords: [
     'creator platform',
     'photography proofing',
@@ -85,6 +86,7 @@ export default function RootLayout({
     >
       <body className="min-h-full">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <ScrollRestore />
           {children}
         </ThemeProvider>
       </body>

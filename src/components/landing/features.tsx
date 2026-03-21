@@ -5,38 +5,38 @@ import { SIGNUP_URL } from '@/lib/constants';
 const features = [
   {
     icon: Globe,
-    eyebrow: '01 — Publish',
-    title: 'Your brand. Your site. Live in minutes.',
+    eyebrow: '01 / Publish',
+    title: 'Your brand. Your site.',
     description:
-      'Build a polished, professional website that looks like it took weeks — in minutes. Choose your fonts, colors, and layout. Add your portfolio, about page, and contact form. Go live on your own domain.',
-    highlights: ['Custom domain support', 'Fully configurable layout', 'Mobile-optimized'],
+      'Get a polished portfolio site up in minutes. Pick your fonts, set your colors, add your work. It will look like you spent weeks on it. Go live on your own domain whenever you are ready.',
+    highlights: ['Custom domain', 'Your fonts and colors', 'Works on mobile'],
     visual: 'site-builder',
   },
   {
     icon: Images,
-    eyebrow: '02 — Proof',
-    title: 'Private galleries your clients will love.',
+    eyebrow: '02 / Proof',
+    title: 'Galleries your clients actually enjoy using.',
     description:
-      'Send password-protected galleries to clients with a link. They can browse, favorite, comment, and select the images they want — all in a clean, branded experience you control.',
-    highlights: ['Invite-only access', 'Client favorites & comments', 'Watermark protection'],
+      'Send clients a private link to their gallery. They can browse, favorite the shots they want, leave comments, and approve work. No app downloads, no confusing software.',
+    highlights: ['Invite-only access', 'Favorites and comments', 'Optional watermarking'],
     visual: 'proofing',
   },
   {
     icon: CreditCard,
-    eyebrow: '03 — Get Paid',
-    title: 'Accept payments without the hassle.',
+    eyebrow: '03 / Get Paid',
+    title: 'Stop chasing invoices.',
     description:
-      "Sell digital downloads, print packages, or gallery access directly through your site. Stripe-powered checkout means payments land in your account — no awkward invoicing or payment links.",
-    highlights: ['Stripe checkout', 'Per-image or per-gallery pricing', 'Direct payouts'],
+      'Clients pay through your site before they get their files. Stripe handles the checkout, the money hits your account, and you never have to follow up on an unpaid invoice again.',
+    highlights: ['Stripe checkout', 'Price per image or per gallery', 'Direct payouts'],
     visual: 'payments',
   },
   {
     icon: Download,
-    eyebrow: '04 — Deliver',
-    title: 'Files delivered automatically after purchase.',
+    eyebrow: '04 / Deliver',
+    title: 'Files in their hands the second they pay.',
     description:
-      "Once a client pays, they get immediate, secure access to their files. No more manually sending download links or chasing clients down. It all happens automatically — you just sit back.",
-    highlights: ['Instant access after payment', 'Secure signed URLs', 'ZIP download support'],
+      'The moment a client completes checkout, they get access to their files. No manual sending, no sharing links through email. It just works.',
+    highlights: ['Instant access after payment', 'Secure download links', 'ZIP support'],
     visual: 'delivery',
   },
 ];
@@ -91,10 +91,10 @@ export function Features() {
         <ScrollReveal>
           <div className="mb-16 text-center sm:mb-20">
             <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary-foreground/40 uppercase">
-              Everything you need
+              What you get
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl lg:text-5xl">
-              One platform. Four superpowers.
+              Everything in one place.
             </h2>
           </div>
         </ScrollReveal>

@@ -5,23 +5,23 @@ const steps = [
   {
     number: '01',
     icon: Sparkles,
-    title: 'Create your space',
+    title: 'Set up your site',
     description:
-      'Set up your Strobd workspace in minutes. Configure your site, upload your portfolio, and make it yours with custom fonts, colors, and your domain.',
+      'Connect your domain, pick your fonts and colors, upload your portfolio. Most people are live within an hour.',
   },
   {
     number: '02',
     icon: Share2,
-    title: 'Share & collaborate',
+    title: 'Send a gallery link',
     description:
-      'Invite clients to private galleries. Let them review, select, and approve work. Set your pricing and collect payment — all through one clean link.',
+      'Create a project, upload your work, and send clients a private link. They browse, select what they want, and pay right there.',
   },
   {
     number: '03',
     icon: CheckCircle,
-    title: 'Deliver & get paid',
+    title: 'Get paid, files delivered',
     description:
-      "Files land in your client's hands automatically the moment payment clears. No follow-ups. No manual sending. Just happy clients and money in your account.",
+      'Payment clears, files go out automatically. You get notified, your client gets their work. Done.',
   },
 ];
 
@@ -37,10 +37,10 @@ export function HowItWorks() {
         <ScrollReveal>
           <div className="mb-16 text-center sm:mb-20">
             <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase">
-              Simple by design
+              How it works
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-              Up and running in three steps.
+              Simple enough to actually use.
             </h2>
           </div>
         </ScrollReveal>

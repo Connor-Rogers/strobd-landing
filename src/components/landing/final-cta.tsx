@@ -26,14 +26,13 @@ export function FinalCTA() {
       <div className="relative z-10 mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
         <ScrollReveal>
           <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-white/35 uppercase">
-            Ready to start?
+            Get started
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Own your creative workflow.
+            Your work deserves a better home.
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/50 sm:text-lg">
-            Join Strobd free and build the client experience your work deserves. No credit card
-            required.
+            Free to start. Takes about an hour to set up. No credit card needed.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

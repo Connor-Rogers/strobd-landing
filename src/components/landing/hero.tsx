@@ -80,8 +80,7 @@ export function Hero() {
           variants={shouldReduceMotion ? undefined : fadeUpItem}
           className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/55 sm:text-xl"
         >
-          The all-in-one platform to build your brand, share galleries with clients, collect
-          payments, and deliver files — all in one place.
+          Build your brand, share galleries with clients, get paid, and deliver files. Everything in one place.
         </motion.p>
 
         {/* CTAs */}
@@ -111,7 +110,7 @@ export function Hero() {
           variants={shouldReduceMotion ? undefined : fadeUpItem}
           className="mt-8 text-xs text-white/30 tracking-wider"
         >
-          Free to start &nbsp;·&nbsp; No credit card required &nbsp;·&nbsp; Your own domain
+          Free to start · No credit card needed · Use your own domain
         </motion.p>
       </motion.div>
 

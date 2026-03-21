@@ -9,7 +9,7 @@ const plans = [
     name: 'Free',
     price: '$0',
     period: 'forever',
-    description: 'Everything you need to get started and test the waters.',
+    description: 'Good for getting started. No commitment.',
     cta: 'Start for Free',
     popular: false,
     features: [
@@ -27,7 +27,7 @@ const plans = [
     name: 'Pro',
     price: '$19',
     period: 'per month',
-    description: 'For full-time creators who want to own their entire client experience.',
+    description: 'For anyone doing this seriously. Your brand, no compromises.',
     cta: 'Go Pro',
     popular: true,
     features: [
@@ -56,13 +56,13 @@ export function Pricing() {
         <ScrollReveal>
           <div className="mb-12 text-center sm:mb-16">
             <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary-foreground/40 uppercase">
-              Simple pricing
+              Pricing
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl lg:text-5xl">
-              Start free. Upgrade when ready.
+              Start free. Upgrade when it makes sense.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-base text-primary-foreground/50">
-              No hidden fees, no complicated tiers. Just two clear plans.
+              Two plans. No surprises.
             </p>
           </div>
         </ScrollReveal>

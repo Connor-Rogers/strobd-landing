@@ -1,4 +1,4 @@
 export const APP_NAME = 'Strobd';
-export const APP_URL = 'https://strobd.com';
-export const SIGNUP_URL = 'https://strobd.com/signup';
-export const LOGIN_URL = 'https://strobd.com/login';
+export const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://app.strobd.com';
+export const SIGNUP_URL = `${APP_URL}/signup`;
+export const LOGIN_URL = `${APP_URL}/login`;
