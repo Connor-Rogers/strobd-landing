@@ -10,7 +10,7 @@ function ApertureO() {
       viewBox="0 0 28 28"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-[0.62em] w-[0.62em] shrink-0"
+      className="h-[0.75em] w-[0.75em] shrink-0 translate-y-[0.1em]"
       style={{ margin: '0 0.03em' }}
       aria-hidden="true"
     >
@@ -31,15 +31,13 @@ export function StrobdLogo({ className }: LogoProps) {
   return (
     <span
       className={cn(
-        'flex items-center font-sans font-bold tracking-tight leading-none select-none text-lg',
+        'flex items-center font-sans font-bold tracking-tight leading-none select-none text-xl',
         className
       )}
       aria-label="Strobd"
       role="img"
     >
-      Str
-      <ApertureO />
-      bd
+      {'Str'}<ApertureO />{'bd'}
     </span>
   );
 }

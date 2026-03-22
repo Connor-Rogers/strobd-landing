@@ -38,7 +38,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 sm:col-span-1">
             <Link href="/" aria-label="Strobd home">
-              <StrobdLogo className="text-base text-foreground" />
+              <StrobdLogo className="text-foreground" />
             </Link>
             <p className="mt-4 max-w-xs text-xs leading-relaxed text-muted-foreground">
               The all-in-one platform for creators to publish, proof, get paid, and deliver.
