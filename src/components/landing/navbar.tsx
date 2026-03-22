@@ -39,7 +39,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center" aria-label="Strobd home">
           <StrobdLogo
             className={cn(
-              'h-6 w-auto transition-colors duration-300',
+              'text-base transition-colors duration-300',
               isScrolled ? 'text-foreground' : 'text-white'
             )}
           />
