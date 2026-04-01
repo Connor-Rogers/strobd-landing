@@ -5,7 +5,7 @@ const items = [
   {
     icon: Globe,
     label: 'Branded Sites',
-    description: 'Your domain, your brand',
+    description: 'Your brand, your way',
   },
   {
     icon: Images,

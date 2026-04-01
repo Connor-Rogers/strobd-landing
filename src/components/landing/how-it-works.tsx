@@ -7,7 +7,7 @@ const steps = [
     icon: Sparkles,
     title: 'Set up your site',
     description:
-      'Connect your domain, pick your fonts and colors, upload your portfolio. Most people are live within an hour.',
+      'Pick your fonts and colors, upload your portfolio, and go live. Most people are set up within an hour.',
   },
   {
     number: '02',

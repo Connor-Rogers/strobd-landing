@@ -110,7 +110,7 @@ export function Hero() {
           variants={shouldReduceMotion ? undefined : fadeUpItem}
           className="mt-8 text-xs text-brand-muted-foreground tracking-wider"
         >
-          Free to start · No credit card needed · Use your own domain
+          Free to start · No credit card needed
         </motion.p>
       </motion.div>
 

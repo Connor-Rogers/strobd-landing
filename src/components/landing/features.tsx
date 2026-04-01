@@ -8,8 +8,8 @@ const features = [
     eyebrow: '01 / Publish',
     title: 'Your brand. Your site.',
     description:
-      'Get a polished portfolio site up in minutes. Pick your fonts, set your colors, add your work. It will look like you spent weeks on it. Go live on your own domain whenever you are ready.',
-    highlights: ['Custom domain', 'Your fonts and colors', 'Works on mobile'],
+      'Get a polished portfolio site up in minutes. Pick your fonts, set your colors, add your work. It will look like you spent weeks on it.',
+    highlights: ['Your fonts and colors', 'Works on mobile', 'Go live in minutes'],
     visual: 'site-builder',
   },
   {
@@ -127,7 +127,7 @@ export function Features() {
                   direction={isReversed ? 'left' : 'right'}
                   delay={0.1}
                 >
-                  <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-brand/60 uppercase">
+                  <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary-foreground/35 uppercase">
                     {feature.eyebrow}
                   </p>
                   <h3 className="mb-4 text-2xl font-bold leading-snug tracking-tight text-primary-foreground sm:text-3xl">
@@ -149,7 +149,7 @@ export function Features() {
                   </ul>
                   <a
                     href={SIGNUP_URL}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-foreground/70 transition-colors hover:text-brand group"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-foreground/70 transition-colors hover:text-primary-foreground group"
                   >
                     Try it free
                     <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />

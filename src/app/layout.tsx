@@ -19,7 +19,7 @@ const brandMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://strobd.com'),
   title: {
-    default: 'Strobd — Publish, Proof, Get Paid, Deliver',
+    default: 'Strobd | Publish, Proof, Get Paid, Deliver',
     template: '%s | Strobd',
   },
   description:
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://strobd.com',
     siteName: 'Strobd',
-    title: 'Strobd — Publish, Proof, Get Paid, Deliver',
+    title: 'Strobd | Publish, Proof, Get Paid, Deliver',
     description:
       'The all-in-one platform for creators to publish branded websites, share proofing galleries with clients, accept payments, and deliver digital files.',
     images: [
@@ -49,13 +49,13 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Strobd — Creator Platform',
+        alt: 'Strobd | Creator Platform',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Strobd — Publish, Proof, Get Paid, Deliver',
+    title: 'Strobd | Publish, Proof, Get Paid, Deliver',
     description:
       'The all-in-one platform for creators to publish branded websites, share proofing galleries with clients, accept payments, and deliver digital files.',
     images: ['/og-image.png'],

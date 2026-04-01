@@ -34,10 +34,13 @@ export function StrobdLogo({ className }: LogoProps) {
         'flex items-center font-sans font-bold tracking-tight leading-none select-none text-xl',
         className
       )}
-      aria-label="Strobd"
       role="img"
+      aria-label="Strobd"
     >
-      {'Str'}<ApertureO />{'bd'}
+      <span className="sr-only">Strobd</span>
+      <span aria-hidden="true" className="flex items-center">
+        {'Str'}<ApertureO />{'bd'}
+      </span>
     </span>
   );
 }
