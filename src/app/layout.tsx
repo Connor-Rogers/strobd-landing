@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
 import { ScrollRestore } from '@/components/scroll-restore';
 import './globals.css';
 
-const geistSans = Geist({
+const brandSans = Plus_Jakarta_Sans({
   variable: '--font-geist-sans',
   subsets: ['latin'],
   display: 'swap',
 });
 
-const geistMono = Geist_Mono({
+const brandMono = JetBrains_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
   display: 'swap',
@@ -82,7 +82,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${brandSans.variable} ${brandMono.variable} h-full antialiased`}
     >
       <body className="min-h-full">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>

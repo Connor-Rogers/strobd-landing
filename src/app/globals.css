@@ -24,6 +24,10 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-muted: var(--brand-muted);
+  --color-brand-muted-foreground: var(--brand-muted-foreground);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -53,7 +57,12 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.9 0.008 80);
   --input: oklch(0.9 0.008 80);
-  --ring: oklch(0.65 0.008 265);
+  --ring: oklch(0.75 0.16 75);
+  /* Brand amber/gold */
+  --brand: oklch(0.75 0.16 75);
+  --brand-foreground: oklch(0.16 0.006 265);
+  --brand-muted: oklch(0.94 0.04 80);
+  --brand-muted-foreground: oklch(0.55 0.08 70);
 }
 
 .dark {
@@ -75,7 +84,12 @@
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.5 0.008 265);
+  --ring: oklch(0.78 0.155 75);
+  /* Brand amber/gold */
+  --brand: oklch(0.78 0.155 75);
+  --brand-foreground: oklch(0.16 0.006 265);
+  --brand-muted: oklch(0.24 0.03 70);
+  --brand-muted-foreground: oklch(0.70 0.10 75);
 }
 
 @layer base {
@@ -121,6 +135,29 @@
 
 .animate-float {
   animation: float-up 6s ease-in-out infinite;
+}
+
+/* ── Brand utilities ──────────────────────────────────────────────────────── */
+
+@keyframes amber-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 24px oklch(0.75 0.16 75 / 0);
+  }
+  50% {
+    box-shadow: 0 0 24px oklch(0.75 0.16 75 / 0.3);
+  }
+}
+
+.animate-amber-glow {
+  animation: amber-glow 3s ease-in-out infinite;
+}
+
+.text-brand-gradient {
+  background: linear-gradient(135deg, oklch(0.78 0.155 75), oklch(0.70 0.17 55));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Subtle grain texture overlay */

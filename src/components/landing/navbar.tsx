@@ -45,8 +45,8 @@ export function Navbar() {
           />
         </Link>
 
-        {/* Desktop nav links */}
-        <div className="hidden items-center gap-8 md:flex">
+        {/* Desktop nav links — absolutely centered */}
+        <div className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -54,7 +54,7 @@ export function Navbar() {
               className={cn(
                 'text-xs font-semibold tracking-[0.12em] uppercase transition-colors duration-200',
                 isScrolled
-                  ? 'text-muted-foreground hover:text-foreground'
+                  ? 'text-muted-foreground hover:text-brand'
                   : 'text-white/70 hover:text-white'
               )}
             >
@@ -82,8 +82,8 @@ export function Navbar() {
             className={cn(
               'transition-all duration-300 active:scale-[0.97]',
               isScrolled
-                ? 'bg-primary text-primary-foreground hover:bg-primary/90'
-                : 'bg-white text-black hover:bg-white/90'
+                ? 'bg-brand text-brand-foreground hover:bg-brand/90'
+                : 'bg-brand text-brand-foreground hover:bg-brand/90'
             )}
           >
             <a href={SIGNUP_URL}>Get Started</a>

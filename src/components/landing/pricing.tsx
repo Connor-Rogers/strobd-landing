@@ -22,7 +22,7 @@ const plans = [
       'File delivery',
       'Strobd branding shown',
     ],
-    note: '10% platform fee on sales',
+    note: '1% platform fee on sales',
   },
   {
     name: 'Pro',
@@ -42,7 +42,7 @@ const plans = [
       'Stripe payments',
       'File delivery',
     ],
-    note: '10% platform fee on sales',
+    note: '0.5% platform fee on sales',
   },
 ];
 
@@ -76,13 +76,13 @@ export function Pricing() {
               <div
                 className={`relative flex h-full flex-col rounded-2xl border p-8 transition-transform duration-300 ${
                   plan.popular
-                    ? 'border-primary-foreground/25 bg-primary-foreground/8 hover:scale-[1.02]'
+                    ? 'border-brand/30 bg-primary-foreground/8 hover:scale-[1.02]'
                     : 'border-primary-foreground/10 bg-primary-foreground/4 hover:scale-[1.01]'
                 }`}
               >
                 {plan.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <Badge className="bg-primary-foreground text-primary text-xs font-semibold px-3 py-1">
+                    <Badge className="bg-brand text-brand-foreground text-xs font-semibold px-3 py-1">
                       Most Popular
                     </Badge>
                   </div>
@@ -123,7 +123,7 @@ export function Pricing() {
                     asChild
                     className={`w-full active:scale-[0.97] transition-all duration-200 ${
                       plan.popular
-                        ? 'bg-primary-foreground text-primary hover:bg-primary-foreground/90'
+                        ? 'bg-brand text-brand-foreground hover:bg-brand/90'
                         : 'bg-primary-foreground/10 text-primary-foreground border border-primary-foreground/15 hover:bg-primary-foreground/15'
                     }`}
                   >

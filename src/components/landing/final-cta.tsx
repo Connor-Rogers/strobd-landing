@@ -18,7 +18,7 @@ export function FinalCTA() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(ellipse 60% 50% at 50% 50%, oklch(0.22 0.015 260 / 0.5) 0%, transparent 70%)',
+            'radial-gradient(ellipse 60% 50% at 50% 50%, oklch(0.30 0.06 75 / 0.4) 0%, transparent 70%)',
         }}
         aria-hidden="true"
       />
@@ -29,7 +29,7 @@ export function FinalCTA() {
             Get started
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Your work deserves a better home.
+            Your work deserves a <span className="text-brand">better home.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/50 sm:text-lg">
             Free to start. Takes about an hour to set up. No credit card needed.
@@ -39,7 +39,7 @@ export function FinalCTA() {
             <Button
               asChild
               size="lg"
-              className="active:scale-[0.97] min-w-52 bg-white text-black font-semibold hover:bg-white/90 transition-all duration-200 h-12 px-8 text-sm tracking-wide group"
+              className="active:scale-[0.97] min-w-52 bg-brand text-brand-foreground font-semibold hover:bg-brand/90 transition-all duration-200 h-12 px-8 text-sm tracking-wide animate-amber-glow group"
             >
               <a href={SIGNUP_URL} className="flex items-center gap-2">
                 Get Started Free

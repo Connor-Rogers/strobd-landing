@@ -38,8 +38,8 @@ export function TrustBar() {
                 key={label}
                 className="flex flex-col items-center gap-2 text-center md:px-8"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted">
-                  <Icon className="h-4.5 w-4.5 text-muted-foreground" strokeWidth={1.5} />
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-muted">
+                  <Icon className="h-4.5 w-4.5 text-brand-muted-foreground" strokeWidth={1.5} />
                 </div>
                 <p className="text-sm font-semibold text-foreground">{label}</p>
                 <p className="text-xs text-muted-foreground">{description}</p>

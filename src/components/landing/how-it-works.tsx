@@ -49,7 +49,7 @@ export function HowItWorks() {
         <div className="relative grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
           {/* Connecting line (desktop only) */}
           <div
-            className="absolute top-7 left-1/6 right-1/6 hidden h-px bg-gradient-to-r from-transparent via-border to-transparent md:block"
+            className="absolute top-7 left-1/6 right-1/6 hidden h-px bg-gradient-to-r from-transparent via-brand/30 to-transparent md:block"
             aria-hidden="true"
           />
 
@@ -59,9 +59,9 @@ export function HowItWorks() {
               <ScrollReveal key={step.number} delay={index * 0.12} className="relative">
                 <div className="flex flex-col items-center text-center md:items-start md:text-left">
                   {/* Step number + icon */}
-                  <div className="relative mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-muted">
+                  <div className="relative mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-brand/15 bg-muted">
                     <Icon className="h-6 w-6 text-foreground" strokeWidth={1.5} />
-                    <span className="absolute -top-2.5 -right-2.5 flex h-5 w-5 items-center justify-center rounded-full bg-foreground text-[10px] font-bold text-background">
+                    <span className="absolute -top-2.5 -right-2.5 flex h-5 w-5 items-center justify-center rounded-full bg-brand text-[10px] font-bold text-brand-foreground">
                       {index + 1}
                     </span>
                   </div>

@@ -65,12 +65,12 @@ function FeatureVisual({ type, icon: Icon }: { type: string; icon: typeof Globe 
       />
       {/* Center icon */}
       <div className="relative flex flex-col items-center gap-4">
-        <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/15 bg-white/8 backdrop-blur-sm">
-          <Icon className="h-7 w-7 text-white/60" strokeWidth={1.25} />
+        <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-brand/20 bg-brand/8 backdrop-blur-sm">
+          <Icon className="h-7 w-7 text-brand/70" strokeWidth={1.25} />
         </div>
         {/* Mock UI lines */}
         <div className="flex flex-col items-center gap-2">
-          <div className="h-2 w-28 rounded-full bg-white/15" />
+          <div className="h-2 w-28 rounded-full bg-brand/20" />
           <div className="h-2 w-20 rounded-full bg-white/8" />
           <div className="h-2 w-24 rounded-full bg-white/10" />
         </div>
@@ -127,7 +127,7 @@ export function Features() {
                   direction={isReversed ? 'left' : 'right'}
                   delay={0.1}
                 >
-                  <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary-foreground/35 uppercase">
+                  <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-brand/60 uppercase">
                     {feature.eyebrow}
                   </p>
                   <h3 className="mb-4 text-2xl font-bold leading-snug tracking-tight text-primary-foreground sm:text-3xl">
@@ -142,14 +142,14 @@ export function Features() {
                         key={h}
                         className="flex items-center gap-2 text-sm text-primary-foreground/65"
                       >
-                        <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary-foreground/30" />
+                        <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand/50" />
                         {h}
                       </li>
                     ))}
                   </ul>
                   <a
                     href={SIGNUP_URL}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-foreground/70 transition-colors hover:text-primary-foreground group"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-foreground/70 transition-colors hover:text-brand group"
                   >
                     Try it free
                     <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />

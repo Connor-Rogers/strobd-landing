@@ -76,6 +76,11 @@ export function Footer() {
             Built for photographers &amp; creative professionals.
           </p>
         </div>
+
+        {/* Easter egg */}
+        <p className="mt-10 text-center text-[10px] text-muted-foreground/15 select-none">
+          Made with <span className="text-brand/20">&#9829;</span> in Vermont
+        </p>
       </div>
     </footer>
   );

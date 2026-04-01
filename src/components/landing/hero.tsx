@@ -19,7 +19,7 @@ export function Hero() {
         className="animate-gradient absolute inset-0"
         style={{
           background:
-            'linear-gradient(135deg, oklch(0.10 0.012 265) 0%, oklch(0.07 0.01 280) 25%, oklch(0.13 0.015 250) 50%, oklch(0.09 0.008 270) 75%, oklch(0.11 0.012 260) 100%)',
+            'linear-gradient(135deg, oklch(0.10 0.012 265) 0%, oklch(0.08 0.02 70) 25%, oklch(0.13 0.015 250) 50%, oklch(0.09 0.008 270) 75%, oklch(0.11 0.012 260) 100%)',
         }}
         aria-hidden="true"
       />
@@ -53,14 +53,14 @@ export function Hero() {
 
       {/* Content */}
       <motion.div
-        className="relative z-10 mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8"
+        className="relative z-10 mx-auto max-w-5xl px-4 pt-20 text-center sm:px-6 lg:px-8"
         variants={shouldReduceMotion ? undefined : staggerContainer}
         initial="hidden"
         animate="show"
       >
         {/* Eyebrow */}
         <motion.div variants={shouldReduceMotion ? undefined : fadeUpItem}>
-          <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-1.5 text-xs font-semibold tracking-[0.16em] text-white/60 uppercase backdrop-blur-sm">
+          <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand/25 bg-white/8 px-4 py-1.5 text-xs font-semibold tracking-[0.16em] text-white/60 uppercase backdrop-blur-sm">
             For photographers &amp; creative professionals
           </span>
         </motion.div>
@@ -68,11 +68,11 @@ export function Hero() {
         {/* Headline */}
         <motion.h1
           variants={shouldReduceMotion ? undefined : fadeUpItem}
-          className="mt-4 text-5xl leading-[1.05] font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
+          className="mt-4 text-6xl leading-[1.05] font-bold tracking-tight text-white sm:text-7xl md:text-8xl lg:text-9xl"
         >
           Publish. Proof.
           <br />
-          <span className="text-white/60">Get Paid. Deliver.</span>
+          <span className="text-brand">Get Paid. Deliver.</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -91,7 +91,7 @@ export function Hero() {
           <Button
             asChild
             size="lg"
-            className="active:scale-[0.97] min-w-48 bg-white text-black font-semibold hover:bg-white/90 transition-all duration-200 h-12 px-8 text-sm tracking-wide"
+            className="active:scale-[0.97] min-w-48 bg-brand text-brand-foreground font-semibold hover:bg-brand/90 transition-all duration-200 h-12 px-8 text-sm tracking-wide"
           >
             <a href={SIGNUP_URL}>Get Started Free</a>
           </Button>
@@ -108,7 +108,7 @@ export function Hero() {
         {/* Social proof */}
         <motion.p
           variants={shouldReduceMotion ? undefined : fadeUpItem}
-          className="mt-8 text-xs text-white/30 tracking-wider"
+          className="mt-8 text-xs text-brand-muted-foreground tracking-wider"
         >
           Free to start · No credit card needed · Use your own domain
         </motion.p>
